@@ -2,21 +2,36 @@ import React from "react";
 import classes from "./BioSection.module.css";
 import BioPic from "../assets/images/seven-gables_brock.jpeg";
 
-const BioSection = () => {
+const BioSection: React.FC = () => {
   return (
-      <section
-          id="about"
-          className={classes["bio-section"]}>
+    <section id="about" className={classes["bio-section"]}>
       <h1>About Me</h1>
       <div className={classes["bio-container"]}>
         <div className={classes["bio-text"]}>
           <p>
             Hello! My name is Brock and I am a self taught web developer. As a
-            photographer and illustrator, I wanted to learn how to make my own
-            websites to display my work in a way that would give me absolute
-            control over the design and user experience. I quickly became
-            enthralled in the process and decided to pursue web development as a
-            career path.
+            &nbsp;
+            <a
+              className={classes["bio-link"]}
+              href="https://brockdallmanphotography.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              photographer
+            </a>
+            &nbsp;and&nbsp;
+            <a
+              className={classes["bio-link"]}
+              href="https://brockdallmanart.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              illustrator
+            </a>
+            , I wanted to learn how to make my own websites to display my work
+            in a way that would give me absolute control over the design and
+            user experience. I quickly became enthralled in the process and
+            decided to pursue web development as a career path.
           </p>
           <p>
             I decided to start taking Udemy courses to expand my knowledge and

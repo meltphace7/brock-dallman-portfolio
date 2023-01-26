@@ -6,7 +6,7 @@ import AlpinePrintsIMG from "../assets/images/alpine-prints_screen-shots-1.jpg";
 import BeerQuestIMG from "../assets/images/beer-quest_screen-shot-1.jpg";
 import BDArtIMG from "../assets/images/bdart-screen-shot-1.jpg";
 
-const ProjectsSection = () => {
+const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className={classes["projects-section"]}>
       <h1>Projects</h1>
@@ -24,7 +24,7 @@ const ProjectsSection = () => {
         <div className={classes["project-text"]}>
           <div className={classes["project-header"]}>
             <h3>Featured Project</h3>
-            <h2>Trail Tracker</h2>
+            <h2 className={classes['project-title']}>Trail Tracker</h2>
           </div>
           <div className={classes["project-description"]}>
             <p>
@@ -104,7 +104,7 @@ const ProjectsSection = () => {
               to be easily configurable to fit the needs of a small business. It
               features on online shop, user signup, login, accounts,
               authentication and administrator privileges. A business owner can
-              sign in as admin and add edit and delete products, and manage
+              sign in as admin and add, edit and delete products, and manage
               orders.
             </p>
           </div>

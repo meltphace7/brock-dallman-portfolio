@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import classes from './Header.module.css'
 import { useInView } from "react-intersection-observer";
 
-const Header = () => {
+const Header: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState(0);
   const [aboutCrossed, setAboutCrossed] = useState(false);
@@ -11,21 +11,14 @@ const Header = () => {
   };
 
   useEffect(() => {
- if (offsetY > 600) {
+ if (offsetY > 300) {
    setAboutCrossed(true);
  }
     
-    if (aboutCrossed && offsetY < 600) {
+    if (aboutCrossed && offsetY < 300) {
        setAboutCrossed(false);
     }
   }, [offsetY])
-
-  console.log(offsetY)
-  if (offsetY === 600) {
-    console.log('ACTIVATE')
-  }
-
-  // console.log(offsetY);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

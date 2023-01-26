@@ -2,8 +2,11 @@
   --main-color-1: #00d9ff;
   --main-color-2: #cd32b3;
 
-  --main-color-bg-1:#181818;
-  --main-color-bg-2:#000000;
+  /* --main-color-bg-1:#181818; */
+   --main-color-bg-1:#03384e;
+  --main-color-bg-2:#012332; ;
+
+   --main-color-text-grey:#c7c7c7;
 }
 
 *,

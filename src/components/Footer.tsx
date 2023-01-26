@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Footer.module.css'
 import logo from "../assets/images/BDLOGO-white.png";
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
       <footer className={classes.footer}>
         <div className={classes['logo-container']}>

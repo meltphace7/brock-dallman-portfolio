@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Navigation.module.css";
 import logo from "../assets/images/BDLOGO-white.png";
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes["logo-container"]}>
