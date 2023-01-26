@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     min-height: 80rem;
-    background-image: url('../assets/images/RAINIER-PINK.jpg');
+    background-image: url('../assets/images/RAINIER-BG.jpg');
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
@@ -14,14 +14,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  var(--main-color-bg-1);
+    background-color: #181818d2; 
 }
 
 .title-container {
-    margin-top: 15rem;
+    opacity: 1;
+    margin-top: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-out {
+    opacity: 0;
 }
 
 .title-container h1 {

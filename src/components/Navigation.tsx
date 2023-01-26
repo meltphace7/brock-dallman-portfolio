@@ -16,7 +16,7 @@ const Navigation = () => {
         </li>
         <li>
           <a className={classes["nav-link"]} href="#about">
-            About Me
+            About me
           </a>
         </li>
         <li>
