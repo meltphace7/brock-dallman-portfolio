@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import BioSection from './components/BioSection'
+import Skills from './components/Skills'
 import ProjectsSection from './components/ProjectsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer';
@@ -13,6 +14,7 @@ function App() {
       <Navigation />
       <Header />
       <BioSection />
+      <Skills />
       <ProjectsSection />
       <ContactSection />
       <Footer />

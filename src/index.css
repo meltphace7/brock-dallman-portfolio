@@ -6,7 +6,7 @@
    --main-color-bg-1:#03384e;
   --main-color-bg-2:#012332; ;
 
-   --main-color-text-grey:#c7c7c7;
+   --main-color-text-grey:#e1e1e1;
 }
 
 *,
@@ -54,6 +54,7 @@ body {
 
 p {
   font-size: 1.6rem;
+  line-height: 2.25rem;
 }
 
 h1 {

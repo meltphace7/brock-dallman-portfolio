@@ -31,19 +31,18 @@ const BioSection: React.FC = () => {
             , I wanted to learn how to make my own websites to display my work
             in a way that would give me absolute control over the design and
             user experience. I quickly became enthralled in the process and
-            decided to pursue web development as a career path.
+            began to pursue web development as a career path.
           </p>
           <p>
-            I decided to start taking Udemy courses to expand my knowledge and
+            I started taking Udemy courses to expand my knowledge and
             skill set. Since learning Javascript, Node, MongoDB, Express and the
-            React framework, I have been designing and coding a multitude of
+            React framework, I have been designing and coding a variety of
             projects, always prioritizing a responsive and user friendly design.
             My projects have included features such as online stores, user
-            signup, login, accounts, authentication, admin privileges, CRUD
+            signup, login, accounts, authentication(JSON web tokens), admin privileges, CRUD
             operations, image uploads to AWS S3 buckets and more.
           </p>
           <p>
-            {" "}
             I look forward to collaborating with you to create awesome,
             responsive and intuitive websites and applications that deliver a
             great user experience!

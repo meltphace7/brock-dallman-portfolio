@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-scroll'
 import classes from "./Navigation.module.css";
 import logo from "../assets/images/BDLOGO-white.png";
 
@@ -15,19 +16,40 @@ const Navigation: React.FC = () => {
           </a>
         </li>
         <li>
-          <a className={classes["nav-link"]} href="#about">
+          <Link
+            className={classes["nav-link"]}
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             About me
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={classes["nav-link"]} href="#projects">
+          <Link
+                      className={classes["nav-link"]}
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={classes["nav-link"]} href="#contact">
+          <Link
+            className={classes["nav-link"]}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
