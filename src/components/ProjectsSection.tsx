@@ -20,11 +20,22 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
-        <img src={TrailTrackerIMG} alt="trail tracker website screenshot" />
+        <img
+          className={classes["project-img"]}
+          src={TrailTrackerIMG}
+          alt="trail tracker website screenshot"
+        />
         <div className={classes["project-text"]}>
           <div className={classes["project-header"]}>
             <h3>Featured Project</h3>
-            <h2 className={classes['project-title']}>Trail Tracker</h2>
+            <a
+              className={classes["project-title"]}
+              href="https://trailtracker.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Trail Tracker
+            </a>
           </div>
           <div className={classes["project-description"]}>
             <p>
@@ -50,8 +61,15 @@ const ProjectsSection: React.FC = () => {
         <div className={classes["project-text-alt"]}>
           <div className={classes["project-header-alt"]}>
             <h3>Featured Project</h3>
-            <h2>Brock Dallman</h2>
-            <h2>Photography</h2>
+            <a
+              className={classes["project-title"]}
+              href="https://brockdallmanphotography.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Brock Dallman</h2>
+              <h2>Photography</h2>
+            </a>
           </div>
           <div className={classes["project-description-alt"]}>
             <p>
@@ -78,6 +96,7 @@ const ProjectsSection: React.FC = () => {
           {" "}
         </a>
         <img
+          className={classes["project-img"]}
           src={BDPhotographyIMG}
           alt="Brock Dallman Photography website screenshot"
         />
@@ -92,11 +111,22 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
-        <img src={AlpinePrintsIMG} alt="Alpine Prints" />
+        <img
+          className={classes["project-img"]}
+          src={AlpinePrintsIMG}
+          alt="Alpine Prints"
+        />
         <div className={classes["project-text"]}>
           <div className={classes["project-header"]}>
             <h3>Featured Project</h3>
-            <h2>Alpine Prints</h2>
+            <a
+              className={classes["project-title"]}
+              href="https://alpineprints.vercel.app/home"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Alpine Prints
+            </a>
           </div>
           <div className={classes["project-description"]}>
             <p>
@@ -122,7 +152,14 @@ const ProjectsSection: React.FC = () => {
         <div className={classes["project-text-alt"]}>
           <div className={classes["project-header-alt"]}>
             <h3>Featured Project</h3>
-            <h2>Beer Quest</h2>
+            <a
+              className={classes["project-title"]}
+              href="https://beer-quest.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Beer Quest
+            </a>
           </div>
           <div className={classes["project-description-alt"]}>
             <p>
@@ -147,7 +184,11 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
-        <img src={BeerQuestIMG} alt="Beer Quest Website screenshot" />
+        <img
+          className={classes["project-img"]}
+          src={BeerQuestIMG}
+          alt="Beer Quest Website screenshot"
+        />
       </div>
 
       <div className={classes["project"]}>
@@ -159,11 +200,22 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
-        <img src={BDArtIMG} alt="Brock Dallman Art website screenshot" />
+        <img
+          className={classes["project-img"]}
+          src={BDArtIMG}
+          alt="Brock Dallman Art website screenshot"
+        />
         <div className={classes["project-text"]}>
           <div className={classes["project-header"]}>
             <h3>Featured Project</h3>
-            <h2>Brock Dallman Art</h2>
+            <a
+              className={classes["project-title"]}
+              href="https://brockdallmanart.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Brock Dallman Art
+            </a>
           </div>
           <div className={classes["project-description"]}>
             <p>

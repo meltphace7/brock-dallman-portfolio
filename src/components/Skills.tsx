@@ -9,71 +9,84 @@ import { SiCss3 } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import Icon from "../assets/images/mongoose.js";
 
 const Skills: React.FC = () => {
   return (
-    <section className={classes["skills-section"]}>
-      <h1>My Skills</h1>
+    <section id="expertise" className={classes["skills-section"]}>
+      <h1>Expertise</h1>
       <div className={classes["skills-container"]}>
         <div className={classes["skills-overview"]}>
           <p>
-            I specialize in creating fully responsive applications utilizing the
-            MERN stack. MongoDB, Express, React and Node. In this configuration,
-            a React front end communicates with a decoupled REST API (backend).
+            I specialize in designing and creating fully responsive applications
+            utilizing the MERN stack. MongoDB, Express, React and Node. In this
+            configuration, a React front end communicates with a decoupled REST
+            API (backend) which in turn, manages data on a database(MongoDB). I
+            strive to make all my projects completely responsive so they look
+            great on any device. As well as coding I have some Adobe
+            Illustrator/Inkscape skills and can create custom logos and icons to
+            incorporate into my designs. I love learning new things and am on a
+            constant quest to broaden my skill set.
           </p>
         </div>
         <div className={classes["skills-display-container"]}>
-          <div className={classes["skills-display-backend"]}>
-            <div className={classes["skills-col"]}>
-              <div className={classes["skill"]}>
-                <FaNodeJs className={classes["icon"]} size={20} />
-                <p>NodeJs</p>
+          <div className={classes["skills-display-frontend"]}>
+            <h3>Frontend</h3>
+            <div className={classes["skills-display-frontend-container"]}>
+              <div className={classes["skills-col"]}>
+                <div className={classes["skill"]}>
+                  <SiJavascript className={classes["icon"]} size={20} />
+                  <p>Javascript</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiTypescript className={classes["icon"]} size={20} />
+                  <p>Typescript</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiReact className={classes["icon"]} size={20} />
+                  <p>React</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiRedux className={classes["icon"]} size={20} />
+                  <p>Redux</p>
+                </div>
               </div>
-              <div className={classes["skill"]}>
-                <FaNodeJs className={classes["icon"]} size={20} />
-                <p>Express</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiMongodb className={classes["icon"]} size={20} />
-                <p>MongoDB</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiMongodb className={classes["icon"]} size={20} />
-                <p>Mongoose</p>
+              <div className={classes["skills-col"]}>
+                <div className={classes["skill"]}>
+                  <SiHtml5 className={classes["icon"]} size={20} />
+                  <p>HTML</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiCss3 className={classes["icon"]} size={20} />
+                  <p>CSS</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiSass className={classes["icon"]} size={20} />
+                  <p>SASS</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className={classes["skills-display-frontend"]}>
-            <div className={classes["skills-col"]}>
-              <div className={classes["skill"]}>
-                <SiJavascript className={classes["icon"]} size={20} />
-                <p>Javascript</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiTypescript className={classes["icon"]} size={20} />
-                <p>Typescript</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiReact className={classes["icon"]} size={20} />
-                <p>React</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiRedux className={classes["icon"]} size={20} />
-                <p>Redux</p>
-              </div>
-            </div>
-            <div className={classes["skills-col"]}>
-              <div className={classes["skill"]}>
-                <SiHtml5 className={classes["icon"]} size={20} />
-                <p>HTML</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiCss3 className={classes["icon"]} size={20} />
-                <p>CSS</p>
-              </div>
-              <div className={classes["skill"]}>
-                <SiSass className={classes["icon"]} size={20} />
-                <p>SASS</p>
+          <div className={classes["skills-display-backend"]}>
+            <h3>Backend</h3>
+            <div className={classes["skills-display-backend-container"]}>
+              <div className={classes["skills-col"]}>
+                <div className={classes["skill"]}>
+                  <FaNodeJs className={classes["icon"]} size={20} />
+                  <p>NodeJs</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <FaNodeJs className={classes["icon"]} size={20} />
+                  <p>Express</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiMongodb className={classes["icon"]} size={20} />
+                  <p>MongoDB</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <Icon />
+                  <p>Mongoose</p>
+                </div>
               </div>
             </div>
           </div>

@@ -6,11 +6,12 @@
   align-items: center;
   background-color: var(--main-color-bg-1);
   color: white;
+  margin-bottom: 5rem;
 }
 
 .projects-section h1 {
   font-size: 7rem;
-  margin: 5rem 0;
+  margin-bottom: 5rem;
 }
 
 .project {
@@ -28,13 +29,25 @@
   height: 50%;
 }
 
-.project-link:hover .project-title {
-  color: blue;
+.project-link:hover ~ .project-img {
+  border: 2px solid var(--main-color-1);
 }
 
-/* .project-title {
-    color: blue;
-} */
+.project-title {
+    color: white;
+    font-size: 4.5rem;
+    z-index: 9999;
+    transition: color 200ms ease-in;
+}
+
+.project-title:hover {
+    color: var(--main-color-1);
+}
+
+.project-img {
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: border 150ms ease-in;
+}
 
 .project img {
   width: 60%;
@@ -79,6 +92,7 @@
 .project-header h2 {
   font-size: 4rem;
 }
+
 
 .project-header-alt h2 {
   font-size: 4rem;

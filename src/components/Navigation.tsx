@@ -32,20 +32,39 @@ const Navigation: React.FC = () => {
       </div>
       <ul className={classes["nav-menu"]}>
         <li>
-          <a className={classes["nav-link"]} href="#home">
+          <Link
+            className={classes["nav-link"]}
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
             Home
-          </a>
-        </li>
+          </Link>
+        </li>{" "}
         <li>
           <Link
             className={classes["nav-link"]}
             to="about"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-75}
             duration={500}
           >
-            About me
+            About
+          </Link>
+        </li>{" "}
+        <li>
+          <Link
+            className={classes["nav-link"]}
+            to="expertise"
+            spy={true}
+            smooth={true}
+            offset={-75}
+            duration={500}
+          >
+            Expertise
           </Link>
         </li>
         <li>
@@ -54,7 +73,7 @@ const Navigation: React.FC = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-75}
             duration={500}
           >
             Projects
@@ -66,7 +85,7 @@ const Navigation: React.FC = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-75}
             duration={500}
           >
             Contact

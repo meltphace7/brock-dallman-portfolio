@@ -50,21 +50,23 @@ useEffect(() => {
     : classes["title-container"];
 
   return (
-    <header
-      id="home"
-      className={classes.header}
-      style={{ transform: `translateY(${offsetY * 0.5}px)` }}
-    >
-      <div className={classes["header-overlay"]}>
-        <div
-          style={{ transform: `translateY(${offsetY * 0.1}px)` }}
-          className={titleClasses}
-        >
-          <h1>Brock Dallman</h1>
-          <h2>Full Stack Web Developer</h2>
+    <React.Fragment>
+      <div id="home"></div>
+      <header
+        className={classes.header}
+        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+      >
+        <div className={classes["header-overlay"]}>
+          <div
+            style={{ transform: `translateY(${offsetY * 0.1}px)` }}
+            className={titleClasses}
+          >
+            <h1>{`<BROCK DALLMAN />`}</h1>
+            <h2>Full Stack Web Developer</h2>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </React.Fragment>
   );
 }
 
