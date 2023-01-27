@@ -17,7 +17,6 @@ function App() {
       <BioSection />
       <Skills />
       <ProjectsSection />
-      <MobileProjectsSection />
       <ContactSection />
       <Footer />
     </div>
