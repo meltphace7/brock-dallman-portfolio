@@ -41,7 +41,6 @@ body {
   width: 100%;
   font-family: "Raleway", "barlow", sans-serif;
   font-weight: 200;
-  /* line-height: 1.6; */
   letter-spacing: 0.05rem;
   background-color: var(--main-color-bg-1);
 }

@@ -66,3 +66,24 @@
       top: 0rem;
   }
 }
+
+@media (max-width: 40em) {
+.nav-menu {
+    width: 85%;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+}
+
+.logo-container {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 7rem;
+  margin: 1rem 0 0 0rem;
+}
+}

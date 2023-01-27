@@ -1,12 +1,12 @@
 import React from "react";
-import classes from "./ProjectsSection.module.css";
+import classes from "./MobileProjectsSection.module.css";
 import TrailTrackerIMG from "../assets/images/trail-tracker_screen-shot-1.jpg";
 import BDPhotographyIMG from "../assets/images/bdphotography_screen-shot-1.jpg";
 import AlpinePrintsIMG from "../assets/images/alpine-prints_screen-shots-1.jpg";
 import BeerQuestIMG from "../assets/images/beer-quest_screen-shot-1.jpg";
 import BDArtIMG from "../assets/images/bdart-screen-shot-1.jpg";
 
-const ProjectsSection: React.FC = () => {
+const MobileProjectsSection: React.FC = () => {
   return (
     <section id="projects" className={classes["projects-section"]}>
       <h1>Projects</h1>
@@ -20,25 +20,23 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://trailtracker.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Trail Tracker
+          </a>
+        </div>
         <img
           className={classes["project-img"]}
           src={TrailTrackerIMG}
           alt="trail tracker website screenshot"
         />
         <div className={classes["project-text"]}>
-          <div
-            className={`${classes["project-header"]} ${classes["tt-header"]}`}
-          >
-            <h3>Featured Project</h3>
-            <a
-              className={classes["project-title"]}
-              href="https://trailtracker.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Trail Tracker
-            </a>
-          </div>
           <div className={classes["project-description"]}>
             <p>
               Trail Tracker is a react app that allows a user to discover new
@@ -60,22 +58,33 @@ const ProjectsSection: React.FC = () => {
       </div>
 
       <div className={classes["project"]}>
-        <div className={classes["project-text-alt"]}>
-          <div
-            className={`${classes["project-header-alt"]} ${classes["bdp-header"]}`}
+        <a
+          className={classes["project-link"]}
+          href="https://brockdallmanphotography.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+        </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://brockdallmanphotography.com/"
+            target="_blank"
+            rel="noreferrer"
           >
-            <h3>Featured Project</h3>
-            <a
-              className={classes["project-title"]}
-              href="https://brockdallmanphotography.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h2>Brock Dallman</h2>
-              <h2>Photography</h2>
-            </a>
-          </div>
-          <div className={classes["project-description-alt"]}>
+            <h2>Brock Dallman</h2>
+            <h2>Photography</h2>
+          </a>
+        </div>
+        <img
+          className={classes["project-img"]}
+          src={BDPhotographyIMG}
+          alt="Brock Dallman Photography website screenshot"
+        />
+        <div className={classes["project-text"]}>
+          <div className={classes["project-description"]}>
             <p>
               Brock Dallman Photography is my fully responsive, personal
               landscape photography site. There you can find photo galleries, a
@@ -91,19 +100,6 @@ const ProjectsSection: React.FC = () => {
             <li>AWS</li>
           </ul>
         </div>
-        <a
-          className={classes["project-link"]}
-          href="https://brockdallmanphotography.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" "}
-        </a>
-        <img
-          className={classes["project-img"]}
-          src={BDPhotographyIMG}
-          alt="Brock Dallman Photography website screenshot"
-        />
       </div>
 
       <div className={classes["project"]}>
@@ -115,25 +111,23 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://alpineprints.vercel.app/home"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Alpine Prints
+          </a>
+        </div>
         <img
           className={classes["project-img"]}
           src={AlpinePrintsIMG}
           alt="Alpine Prints"
         />
         <div className={classes["project-text"]}>
-          <div
-            className={`${classes["project-header"]} ${classes["ap-header"]}`}
-          >
-            <h3>Featured Project</h3>
-            <a
-              className={classes["project-title"]}
-              href="https://alpineprints.vercel.app/home"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Alpine Prints
-            </a>
-          </div>
           <div className={classes["project-description"]}>
             <p>
               Alpine Prints is a website for a fictitious company. I designed it
@@ -155,35 +149,6 @@ const ProjectsSection: React.FC = () => {
       </div>
 
       <div className={classes["project"]}>
-        <div className={classes["project-text-alt"]}>
-          <div
-            className={`${classes["project-header-alt"]} ${classes["bq-header"]}`}
-          >
-            <h3>Featured Project</h3>
-            <a
-              className={classes["project-title"]}
-              href="https://beer-quest.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Beer Quest
-            </a>
-          </div>
-          <div className={classes["project-description-alt"]}>
-            <p>
-              Beer Quest is a react app that allows a user to search for
-              breweries in a city. When the user selects a brewery, data is
-              displayed like the phone number, address and a link to their
-              website. When users click the address link, they are redirected to
-              google maps with the address to the brewery pluged in. Users can
-              save a brewery by adding it to thier favorites which are stored on
-              their browser in local storage.
-            </p>
-          </div>
-          <ul className={classes["project-technologies"]}>
-            <li>React</li>
-          </ul>
-        </div>
         <a
           className={classes["project-link"]}
           href="https://beer-quest.vercel.app/"
@@ -192,11 +157,37 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://beer-quest.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Beer Quest
+          </a>
+        </div>
         <img
           className={classes["project-img"]}
           src={BeerQuestIMG}
           alt="Beer Quest Website screenshot"
         />
+        <div className={classes["project-text"]}>
+          <div className={classes["project-description"]}>
+            <p>
+              Trail Tracker is a react app that allows a user to discover new
+              trails as well as add their own. Each trail profile contains data
+              including images, a trail description, weather data, coordinates
+              and a map of the trailhead. Users can submit a trail after
+              creating an account and can edit and delete their respective
+              trails after submitting.
+            </p>
+          </div>
+          <ul className={classes["project-technologies"]}>
+            <li>React</li>
+          </ul>
+        </div>
       </div>
 
       <div className={classes["project"]}>
@@ -208,25 +199,23 @@ const ProjectsSection: React.FC = () => {
         >
           {" "}
         </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://brockdallmanart.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Brock Dallman Art
+          </a>
+        </div>
         <img
           className={classes["project-img"]}
           src={BDArtIMG}
           alt="Brock Dallman Art website screenshot"
         />
         <div className={classes["project-text"]}>
-          <div
-            className={`${classes["project-header"]} ${classes["bda-header"]}`}
-          >
-            <h3>Featured Project</h3>
-            <a
-              className={classes["project-title"]}
-              href="https://brockdallmanart.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Brock Dallman Art
-            </a>
-          </div>
           <div className={classes["project-description"]}>
             <p>
               Brock Dallman Art is my fully responsive personal website to
@@ -246,4 +235,4 @@ const ProjectsSection: React.FC = () => {
   );
 };
 
-export default ProjectsSection;
+export default MobileProjectsSection;

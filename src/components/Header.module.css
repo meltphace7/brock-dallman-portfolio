@@ -42,3 +42,25 @@
   background-color: black;
   padding: 1rem;
 }
+
+@media (max-width: 60em) {
+.title-container h1 {
+  font-size: 7rem;
+}
+}
+
+@media (max-width: 50em) {
+.title-container h1 {
+  font-size: 6rem;
+}
+}
+
+@media (max-width: 40em) {
+.title-container h1 {
+  font-size: 4rem;
+}
+.title-container h2 {
+  font-size: 2rem;
+}
+}
+

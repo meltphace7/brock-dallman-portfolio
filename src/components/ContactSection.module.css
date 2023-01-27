@@ -18,6 +18,7 @@
   font-size: 7rem;
   color: white;
 }
+
 .title-container h2 {
   color: var(--main-color-1);
 }
@@ -155,4 +156,10 @@
     padding-top: 0rem;
     min-height: 80vh;
   }
+
+  .title {
+  font-size: 5rem;
+  color: white;
+}
+
 }
