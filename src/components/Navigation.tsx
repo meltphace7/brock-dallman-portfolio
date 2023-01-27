@@ -1,11 +1,32 @@
-import React from "react";
-import {Link} from 'react-scroll'
+import React, {useState, useEffect} from "react";
+import { Link } from "react-scroll";
 import classes from "./Navigation.module.css";
 import logo from "../assets/images/BDLOGO-white.png";
+import useScrollDirection from "../hooks/use-scroll-direction";
 
 const Navigation: React.FC = () => {
+    const scrollDirection = useScrollDirection();
+    
+      const [offsetY, setOffsetY] = useState(0);
+      const [aboutCrossed, setAboutCrossed] = useState(false);
+      const handleScroll = () => {
+        setOffsetY(window.pageYOffset);
+      };
+
+      useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
+
+  console.log(scrollDirection);
+
+  const navClasses =
+    scrollDirection === "up" && offsetY > 50
+      ? `${classes.nav} ${classes["sticky-nav"]}`
+      : classes.nav;
+
   return (
-    <nav className={classes.nav}>
+    <nav className={navClasses}>
       <div className={classes["logo-container"]}>
         <img src={logo} alt="Brock Dallman Logo" />
       </div>
@@ -29,7 +50,7 @@ const Navigation: React.FC = () => {
         </li>
         <li>
           <Link
-                      className={classes["nav-link"]}
+            className={classes["nav-link"]}
             to="projects"
             spy={true}
             smooth={true}
