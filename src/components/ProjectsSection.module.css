@@ -140,7 +140,7 @@
   color: var(--main-color-1);
 }
 
-@media (max-width: 40em) {
+@media (max-width: 48em) {
     .projects {
         display: none;
     }

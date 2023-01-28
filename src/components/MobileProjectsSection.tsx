@@ -8,7 +8,7 @@ import BDArtIMG from "../assets/images/bdart-screen-shot-1.jpg";
 
 const MobileProjectsSection: React.FC = () => {
   return (
-    <React.Fragment>
+    <div className={classes["mobile-projects"]}>
       <div className={classes["project"]}>
         <a
           className={classes["project-link"]}
@@ -229,7 +229,7 @@ const MobileProjectsSection: React.FC = () => {
           </ul>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
