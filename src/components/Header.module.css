@@ -14,12 +14,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #03384ed2;
+  /* background-color: #03384ed2; */
+  animation: bgFade 4000ms ease-in forwards;
+}
+
+@keyframes bgFade {
+    0% {
+background-color: #03384e;
+    }
+
+        50% {
+background-color: #03384e;
+    }
+
+    100% {
+        background-color: #03384ed2;
+    }
 }
 
 .title-container {
   opacity: 1;
   margin-top: 25rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,9 +47,24 @@
 }
 
 .title-container h1 {
+    position: relative;
   font-size: 9rem;
   font-weight: 300;
   color: white;
+  animation: fadeIn 1000ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* top: -10rem; */
+    }
+
+    100% {
+        opacity: 1;
+         /* top: 0rem; */
+    }
+
 }
 
 .title-container h2 {
