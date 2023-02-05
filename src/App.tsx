@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import ProjectsSection from './components/ProjectsSection'
 import MobileProjectsSection from './components/MobileProjectsSection'
 import ContactSection from './components/ContactSection'
+import Certs from './components/Certs';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <ProjectsSection />
       <ContactSection />
       <Footer />
+      <Certs />
     </div>
   );
 }

@@ -1,0 +1,45 @@
+import classes from './Certs.module.css'
+import ReactDOM from "react-dom";
+import React from 'react'
+import javascriptCert from "../assets/certs/javascript-cert.jpeg";
+import reactCert from '../assets/certs/react-cert.jpeg'
+import typescriptCert from "../assets/certs/typescript-cert.jpeg";
+import htmlCert from "../assets/certs/html-css-sass-cert.jpeg";
+import nodeCert from "../assets/certs/node-cert.jpeg";
+
+const certs = () => {
+    return (
+      <div className={classes.backdrop}>
+        <div className={classes.certs}>
+          <h1>Certifications</h1>
+          <img
+            className={classes.cert}
+            src={reactCert}
+            alt="react certification"
+          />
+          <img
+            className={classes.cert}
+            src={javascriptCert}
+            alt="javascript certification"
+          />
+          <img
+            className={classes.cert}
+            src={typescriptCert}
+            alt="react certification"
+          />
+          <img
+            className={classes.cert}
+            src={htmlCert}
+            alt="react certification"
+          />
+          <img
+            className={classes.cert}
+            src={nodeCert}
+            alt="react certification"
+          />
+        </div>
+      </div>
+    );
+}
+
+export default certs
