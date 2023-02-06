@@ -8,7 +8,7 @@
 
 .certs-container {
     position: relative;
-      width: 70%;
+      width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,35 +27,6 @@
     z-index: 55;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 300rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 4;
-}
-
-.modal {
-  position: fixed;
-  top: 20vh;
-  left: 5%;
-  width: 90%;
-  min-height: 25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  padding: 4rem;
-  border-radius: 14px;
-  border: 1px solid white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  z-index: 30;
-  animation: slide-down 300ms ease-out forwards;
-}
-
 .link {
     margin-top: 5rem;
     color: var(--main-color-1);
@@ -67,28 +38,11 @@
     color: white;
 }
 
-@media (min-width: 768px) {
-  .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
-  }
+@media (max-width: 40em) {
+ 
+.cert {
+    width: 96%;
+    margin-bottom: 2rem;
+    z-index: 55;
 }
-
-
-@media (max-width: 48em) {
-  .modal {
-    width: 60%;
-    left: 11%;
-  }
-}
-
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
