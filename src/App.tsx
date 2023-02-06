@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import BioSection from './components/BioSection'
@@ -9,18 +10,30 @@ import MobileProjectsSection from './components/MobileProjectsSection'
 import ContactSection from './components/ContactSection'
 import Certs from './components/Certs';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop'
 
+console.log(Route)
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Header />
-      <BioSection />
-      <Skills />
-      <ProjectsSection />
-      <ContactSection />
-      <Footer />
-      <Certs />
+      <ScrollToTop />
+      <Switch>
+        <Route path="/home">
+          <Navigation />
+          <Header />
+          <BioSection />
+          <Skills />
+          <ProjectsSection />
+          <ContactSection />
+          <Footer />
+        </Route>
+        <Route path="/certs">
+          <Certs />
+        </Route>
+        <Route path="*">
+          <Redirect to="/home" />
+        </Route>
+      </Switch>
     </div>
   );
 }

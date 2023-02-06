@@ -1,13 +1,18 @@
 .certs {
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10rem;
+}
 
-
-
-
+.certs-container {
+    position: relative;
+      width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
 }
 
 .certs h1 {
@@ -19,20 +24,17 @@
 .cert {
     width: 70%;
     margin-bottom: 2rem;
+    z-index: 55;
 }
 
-
-
-
-
 .backdrop {
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100%;
-  /* height: 100vh; */
-  z-index: 20;
+  height: 300rem;
   background-color: rgba(0, 0, 0, 0.75);
+  z-index: 4;
 }
 
 .modal {
@@ -52,6 +54,17 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
+}
+
+.link {
+    margin-top: 5rem;
+    color: var(--main-color-1);
+    font-size: 3rem;
+    transition: color .200ms ease-in;
+}
+
+.link:hover {
+    color: white;
 }
 
 @media (min-width: 768px) {

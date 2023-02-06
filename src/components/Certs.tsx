@@ -1,6 +1,7 @@
 import classes from './Certs.module.css'
 import ReactDOM from "react-dom";
-import React from 'react'
+import { Link } from "react-router-dom";
+import React, { Fragment } from 'react'
 import javascriptCert from "../assets/certs/javascript-cert.jpeg";
 import reactCert from '../assets/certs/react-cert.jpeg'
 import typescriptCert from "../assets/certs/typescript-cert.jpeg";
@@ -9,8 +10,10 @@ import nodeCert from "../assets/certs/node-cert.jpeg";
 
 const certs = () => {
     return (
-      <div className={classes.backdrop}>
+      <Fragment>
+     
         <div className={classes.certs}>
+          <div className={classes["certs-container"]}></div>
           <h1>Certifications</h1>
           <img
             className={classes.cert}
@@ -37,8 +40,9 @@ const certs = () => {
             src={nodeCert}
             alt="react certification"
           />
+          <Link className={classes.link} to="/home">Return to Main Page</Link>
         </div>
-      </div>
+      </Fragment>
     );
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Skills.module.css";
 import { SiJavascript } from "react-icons/si";
 import { SiReact } from "react-icons/si";
@@ -26,7 +27,7 @@ const Skills: React.FC = () => {
             great on any device. As well as coding I have some Adobe
             Illustrator/Inkscape skills and can create custom logos and icons to
             incorporate into my designs. I love learning new things and am on a
-            constant quest to broaden my skill set.
+            constant quest to broaden my skill set.  My certifications can be found <Link className={classes.link} to='/certs'>here</Link>
           </p>
         </div>
         <div className={classes["skills-display-container"]}>
