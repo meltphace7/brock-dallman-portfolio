@@ -27,7 +27,15 @@ const Skills: React.FC = () => {
             great on any device. As well as coding I have some Adobe
             Illustrator/Inkscape skills and can create custom logos and icons to
             incorporate into my designs. I love learning new things and am on a
-            constant quest to broaden my skill set.  My certifications can be found <Link className={classes.link} to='/certs'>here</Link>
+            constant quest to broaden my skill set. My certifications can be
+            found{" "}
+            <Link className={classes.link} to="/certs">
+              here
+            </Link>{" "}
+            and you can find my project repos on{" "}
+            <a className={classes.link} href="https://github.com/meltphace7">
+              Github
+            </a>
           </p>
         </div>
         <div className={classes["skills-display-container"]}>
