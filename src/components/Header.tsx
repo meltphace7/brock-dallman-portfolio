@@ -6,6 +6,7 @@ const Header: React.FC = () => {
   // Parallax effect for Header
   const [offsetY, setOffsetY] = useState(0);
   const [aboutCrossed, setAboutCrossed] = useState(false);
+  
   const handleScroll = () => {
     setOffsetY(window.pageYOffset);
   };

@@ -43,7 +43,7 @@ const ProjectsSection: React.FC = () => {
             </div>
             <div className={classes["project-description"]}>
               <p>
-                Trail Tracker is a react app that allows a user to discover new
+                Trail Tracker is a React app that allows a user to discover new
                 trails as well as add their own. Each trail profile contains
                 data including images, a trail description, weather data,
                 coordinates and a map of the trailhead. Users can submit a trail
@@ -173,12 +173,12 @@ const ProjectsSection: React.FC = () => {
             </div>
             <div className={classes["project-description-alt"]}>
               <p>
-                Beer Quest is a react app that allows a user to search for
+                Beer Quest is a React app that allows a user to search for
                 breweries in a city. When the user selects a brewery, data is
                 displayed like the phone number, address and a link to their
                 website. When users click the address link, they are redirected
-                to google maps with the address to the brewery pluged in. Users
-                can save a brewery by adding it to thier favorites which are
+                to google maps with the address to the brewery plugged in. Users
+                can save a brewery by adding it to their favorites which are
                 stored on their browser in local storage.
               </p>
             </div>
