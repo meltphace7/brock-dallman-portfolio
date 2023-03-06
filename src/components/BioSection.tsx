@@ -9,7 +9,7 @@ const BioSection: React.FC = () => {
       <div className={classes["bio-container"]}>
         <div className={classes["bio-text"]}>
           <p>
-            Hello! My name is Brock and I am a self taught web developer. As a
+            Hello! My name is Brock and I'm a web developer. As a
             &nbsp;
             <a
               className={classes["bio-link"]}
