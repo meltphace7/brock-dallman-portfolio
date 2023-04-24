@@ -10,6 +10,7 @@ import { SiCss3 } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { SiNextdotjs } from 'react-icons/si'
 import Icon from "../assets/images/mongoose.js";
 
 const Skills: React.FC = () => {
@@ -72,6 +73,10 @@ const Skills: React.FC = () => {
                 <div className={classes["skill"]}>
                   <SiSass className={classes["icon"]} size={20} />
                   <p>SASS</p>
+                </div>
+                <div className={classes["skill"]}>
+                  <SiNextdotjs className={classes["icon"]} size={20} />
+                  <p>NextJS</p>
                 </div>
               </div>
             </div>
