@@ -87,7 +87,8 @@ const MobileProjectsSection: React.FC = () => {
               Brock Dallman Photography is my fully responsive, personal
               landscape photography site. There you can find photo galleries, a
               blog of my backpacking/photography adventures, an online shop and
-              more.
+              more. Also features an admin dashboard where I can add, edit and
+              delete products as well as manage orders.
             </p>
           </div>
           <ul className={classes["project-technologies"]}>
@@ -131,9 +132,9 @@ const MobileProjectsSection: React.FC = () => {
               Alpine Prints is a website for a fictitious company. I designed it
               to be easily configurable to fit the needs of a small business. It
               features on online shop, user signup, login, accounts,
-              authentication and administrator privileges. A business owner can
-              sign in as admin and add, edit and delete products, and manage
-              orders.
+              authentication and administrator dashboard/privileges. A business
+              owner can sign in as admin and add, edit and delete products, and
+              manage orders.
             </p>
           </div>
           <ul className={classes["project-technologies"]}>
@@ -191,7 +192,7 @@ const MobileProjectsSection: React.FC = () => {
       <div className={classes["project"]}>
         <a
           className={classes["project-link"]}
-          href="https://brockdallmanart.netlify.app/"
+          href="https://brockdallmanart.com"
           target="_blank"
           rel="noreferrer"
         >
@@ -201,7 +202,7 @@ const MobileProjectsSection: React.FC = () => {
           <h3>Featured Project</h3>
           <a
             className={classes["project-title"]}
-            href="https://brockdallmanart.netlify.app/"
+            href="https://brockdallmanart.com"
             target="_blank"
             rel="noreferrer"
           >
@@ -216,16 +217,17 @@ const MobileProjectsSection: React.FC = () => {
         <div className={classes["project-text"]}>
           <div className={classes["project-description"]}>
             <p>
-              Brock Dallman Art is my fully responsive personal website to
-              display my illustrations and art. It was created prior to learning
-              React and was made with pure CSS HTML and Javascript. I am
-              currently in the process of creating an upgraded React version.
+              Brock Dallman Art is my fully responsive personal art website.
+              Created with NextJS, brockdallmanart.com utilizes NextJS features
+              like server side rendering, file based routing, dynamic image
+              optimization, improved SEO and a built in API.
             </p>
           </div>
           <ul className={classes["project-technologies"]}>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
+            <li>NEXTJS</li>
+            <li>REACT</li>
+            <li>MongoDB</li>
+            <li>AWS</li>
           </ul>
         </div>
       </div>
