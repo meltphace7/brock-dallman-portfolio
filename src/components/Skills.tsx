@@ -21,7 +21,7 @@ const Skills: React.FC = () => {
         <div className={classes["skills-overview"]}>
           <p>
             I specialize in designing and creating fully responsive applications
-            utilizing the MERN stack. MongoDB, Express, React and Node. In this
+            utilizing the NextJS framework as well as the MERN stack. MongoDB, Express, React and Node. In this
             configuration, a React front end communicates with a decoupled REST
             API (backend) which in turn, manages data on a database(MongoDB). I
             strive to make all my projects completely responsive so they look
