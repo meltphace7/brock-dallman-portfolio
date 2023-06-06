@@ -20,11 +20,13 @@ const Skills: React.FC = () => {
       <div className={classes["skills-container"]}>
         <div className={classes["skills-overview"]}>
           <p>
-            I specialize in designing and creating fully responsive applications
-            utilizing the NextJS framework as well as the MERN stack. MongoDB, Express, React and Node. In this
-            configuration, a React front end communicates with a decoupled REST
-            API (backend) which in turn, manages data on a database(MongoDB). I
-            strive to make all my projects completely responsive so they look
+            I specialize in the React frontend framework, and the MERN
+            stack(MongoDB, Express, React, NodeJS). I have recently learned the
+            NextJS framework and have embraced it’s many awesome features such
+            as server side rendering, file based routing, image optimization,
+            and it’s built in API. I have since transitioned some of my React
+            projects to NextJS, to improve user experience as well as boost SEO.
+            I strive to make all my projects completely responsive so they look
             great on any device. As well as coding I have some Adobe
             Illustrator/Inkscape skills and can create custom logos and icons to
             incorporate into my designs. I love learning new things and am on a
