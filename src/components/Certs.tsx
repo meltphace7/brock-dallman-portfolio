@@ -7,40 +7,47 @@ import reactCert from '../assets/certs/react-cert.jpeg'
 import typescriptCert from "../assets/certs/typescript-cert.jpeg";
 import htmlCert from "../assets/certs/html-css-sass-cert.jpeg";
 import nodeCert from "../assets/certs/node-cert.jpeg";
+import nextCert from "../assets/certs/NEXTJS-CERT.jpeg";
 
 const certs = () => {
     return (
       <Fragment>
-     
         <div className={classes.certs}>
           <div className={classes["certs-container"]}></div>
           <h1>Certifications</h1>
           <img
             className={classes.cert}
             src={reactCert}
-            alt="react certification"
+            alt="React certification"
           />
           <img
             className={classes.cert}
             src={javascriptCert}
-            alt="javascript certification"
+            alt="Javascript certification"
           />
           <img
             className={classes.cert}
             src={typescriptCert}
-            alt="react certification"
+            alt="Typescript certification"
           />
           <img
             className={classes.cert}
             src={htmlCert}
-            alt="react certification"
+            alt="HTML certification"
           />
           <img
             className={classes.cert}
             src={nodeCert}
-            alt="react certification"
+            alt="NodeJS certification"
           />
-          <Link className={classes.link} to="/home">Return to Main Page</Link>
+          <img
+            className={classes.cert}
+            src={nextCert}
+            alt="NextJs certification"
+          />
+          <Link className={classes.link} to="/home">
+            Return to Main Page
+          </Link>
         </div>
       </Fragment>
     );

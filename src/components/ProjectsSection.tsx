@@ -87,9 +87,8 @@ const ProjectsSection: React.FC = () => {
               </p>
             </div>
             <ul className={classes["project-technologies"]}>
+              <li>NextJS</li>
               <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
               <li>MongoDB</li>
               <li>AWS</li>
             </ul>
