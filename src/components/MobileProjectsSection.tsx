@@ -4,7 +4,8 @@ import TrailTrackerIMG from "../assets/images/trail-tracker_screen-shot-1.jpg";
 import BDPhotographyIMG from "../assets/images/bdphotography_screen-shot-1.jpg";
 import AlpinePrintsIMG from "../assets/images/alpine-prints_screen-shots-1.jpg";
 import BeerQuestIMG from "../assets/images/beer-quest_screen-shot-1.jpg";
-import BDArtIMG from "../assets/images/bdart-screen-shot-1.jpg";
+import TietonIMG from "../assets/images/TIETON_SCREENSHOT.jpg";
+import BDArtIMG from "../assets/images/BDART_SCREENSHOT.jpg";
 
 const MobileProjectsSection: React.FC = () => {
   return (
@@ -150,6 +151,48 @@ const MobileProjectsSection: React.FC = () => {
       <div className={classes["project"]}>
         <a
           className={classes["project-link"]}
+          href="https://tieton-construction-nextjs.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+        </a>
+        <div className={classes["project-header"]}>
+          <h3>Featured Project</h3>
+          <a
+            className={classes["project-title"]}
+            href="https://tieton-construction-nextjs.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Tieton Construction
+          </a>
+        </div>
+        <img
+          className={classes["project-img"]}
+          src={TietonIMG}
+          alt="Beer Quest Website screenshot"
+        />
+        <div className={classes["project-text"]}>
+          <div className={classes["project-description"]}>
+            <p>
+              Tieton Constuction is a business website made with NextJS. This
+              website is totally responsive and features the standard pages
+              found in a typical construction company website. It also features
+              a project portfolio gallery complete with an image slider. Aside
+              from the website I also designed the companies logo.
+            </p>
+          </div>
+          <ul className={classes["project-technologies"]}>
+            <li>NextJS</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className={classes["project"]}>
+        <a
+          className={classes["project-link"]}
           href="https://beer-quest.vercel.app/"
           target="_blank"
           rel="noreferrer"
@@ -175,12 +218,13 @@ const MobileProjectsSection: React.FC = () => {
         <div className={classes["project-text"]}>
           <div className={classes["project-description"]}>
             <p>
-              Trail Tracker is a react app that allows a user to discover new
-              trails as well as add their own. Each trail profile contains data
-              including images, a trail description, weather data, coordinates
-              and a map of the trailhead. Users can submit a trail after
-              creating an account and can edit and delete their respective
-              trails after submitting.
+              Beer Quest is a React app that allows a user to search for
+              breweries in a city. When the user selects a brewery, data is
+              displayed like the phone number, address and a link to their
+              website. When users click the address link, they are redirected to
+              google maps with the address to the brewery plugged in. Users can
+              save a brewery by adding it to their favorites which are stored on
+              their browser in local storage.
             </p>
           </div>
           <ul className={classes["project-technologies"]}>

@@ -3,8 +3,9 @@ import classes from "./ProjectsSection.module.css";
 import TrailTrackerIMG from "../assets/images/trail-tracker_screen-shot-1.jpg";
 import BDPhotographyIMG from "../assets/images/bdphotography_screen-shot-1.jpg";
 import AlpinePrintsIMG from "../assets/images/alpine-prints_screen-shots-1.jpg";
+import TietonIMG from "../assets/images/TIETON_SCREENSHOT.jpg";
 import BeerQuestIMG from "../assets/images/beer-quest_screen-shot-1.jpg";
-import BDArtIMG from "../assets/images/bdart-screen-shot-1.jpg";
+import BDArtIMG from "../assets/images/BDART_SCREENSHOT.jpg";
 import MobileProjectsSection from './MobileProjectsSection'
 
 const ProjectsSection: React.FC = () => {
@@ -164,31 +165,31 @@ const ProjectsSection: React.FC = () => {
               <h3>Featured Project</h3>
               <a
                 className={classes["project-title"]}
-                href="https://beer-quest.vercel.app/"
+                href="https://tieton-construction-nextjs.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Beer Quest
+                Tieton Construction
               </a>
             </div>
             <div className={classes["project-description-alt"]}>
               <p>
-                Beer Quest is a React app that allows a user to search for
-                breweries in a city. When the user selects a brewery, data is
-                displayed like the phone number, address and a link to their
-                website. When users click the address link, they are redirected
-                to google maps with the address to the brewery plugged in. Users
-                can save a brewery by adding it to their favorites which are
-                stored on their browser in local storage.
+                Tieton Constuction is a business website made with NextJS. This
+                website is totally responsive and features the standard pages
+                found in a typical construction company website. It also
+                features a project portfolio gallery complete with an image
+                slider. Aside from the website I also designed the companies
+                logo.
               </p>
             </div>
             <ul className={classes["project-technologies"]}>
+              <li>NextJS</li>
               <li>React</li>
             </ul>
           </div>
           <a
             className={classes["project-link"]}
-            href="https://beer-quest.vercel.app/"
+            href="https://tieton-construction-nextjs.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -196,8 +197,8 @@ const ProjectsSection: React.FC = () => {
           </a>
           <img
             className={classes["project-img"]}
-            src={BeerQuestIMG}
-            alt="Beer Quest Website screenshot"
+            src={TietonIMG}
+            alt="Tieton Construction Website screenshot"
           />
         </div>
 
@@ -244,6 +245,51 @@ const ProjectsSection: React.FC = () => {
               <li>AWS</li>
             </ul>
           </div>
+        </div>
+
+        <div className={classes["project"]}>
+          <div className={classes["project-text-alt"]}>
+            <div
+              className={`${classes["project-header-alt"]} ${classes["bq-header"]}`}
+            >
+              <h3>Featured Project</h3>
+              <a
+                className={classes["project-title"]}
+                href="https://beer-quest.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Beer Quest
+              </a>
+            </div>
+            <div className={classes["project-description-alt"]}>
+              <p>
+                Beer Quest is a React app that allows a user to search for
+                breweries in a city. When the user selects a brewery, data is
+                displayed like the phone number, address and a link to their
+                website. When users click the address link, they are redirected
+                to google maps with the address to the brewery plugged in. Users
+                can save a brewery by adding it to their favorites which are
+                stored on their browser in local storage.
+              </p>
+            </div>
+            <ul className={classes["project-technologies"]}>
+              <li>React</li>
+            </ul>
+          </div>
+          <a
+            className={classes["project-link"]}
+            href="https://beer-quest.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+          </a>
+          <img
+            className={classes["project-img"]}
+            src={BeerQuestIMG}
+            alt="Beer Quest Website screenshot"
+          />
         </div>
       </div>
       <MobileProjectsSection />

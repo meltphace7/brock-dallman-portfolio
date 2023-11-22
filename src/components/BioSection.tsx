@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./BioSection.module.css";
-import BioPic from "../assets/images/seven-gables_brock.jpeg";
+import BioPic from "../assets/images/BROCK_MTN-PORTRAIT-HQ.jpg";
 
 const BioSection: React.FC = () => {
   return (
@@ -9,8 +9,7 @@ const BioSection: React.FC = () => {
       <div className={classes["bio-container"]}>
         <div className={classes["bio-text"]}>
           <p>
-            Hello! My name is Brock and I'm a web developer. As a
-            &nbsp;
+            Hello! My name is Brock and I'm a web developer. As a &nbsp;
             <a
               className={classes["bio-link"]}
               href="https://brockdallmanphotography.com/"
@@ -34,13 +33,13 @@ const BioSection: React.FC = () => {
             began to pursue web development as a career path.
           </p>
           <p>
-            I started taking Udemy courses to expand my knowledge and
-            skill set. Since learning Javascript, Node, MongoDB, Express and the
-            React framework, I have been designing and coding a variety of
-            projects, always prioritizing a responsive and user friendly design.
-            My projects have included features such as online stores, user
-            signup, login, accounts, authentication(JSON web tokens), admin privileges, CRUD
-            operations, image uploads to AWS S3 buckets and more.
+            I started taking Udemy courses to expand my knowledge and skill set.
+            Since learning Javascript, Node, MongoDB, Express and the React
+            framework, I have been designing and coding a variety of projects,
+            always prioritizing a responsive and user friendly design. My
+            projects have included features such as online stores, user signup,
+            login, accounts, authentication(JSON web tokens), admin privileges,
+            CRUD operations, image uploads to AWS S3 buckets and more.
           </p>
           <p>
             I look forward to collaborating with you to create awesome,
@@ -48,7 +47,9 @@ const BioSection: React.FC = () => {
             great user experience!
           </p>
         </div>
-        <img src={BioPic} alt="Brock Dallman" />
+        <div className={classes["bio-img__container"]}>
+          <img src={BioPic} alt="Brock Dallman" />
+        </div>
       </div>
     </section>
   );
