@@ -20,7 +20,11 @@
 }
 
 @media (max-width: 40em) {
-    .footer {
-        justify-content: center;
-    }
+  .footer {
+    justify-content: center;
+  }
+
+  .logo-container {
+    margin-left: 0rem;
+  }
 }

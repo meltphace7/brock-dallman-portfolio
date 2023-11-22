@@ -6,7 +6,6 @@ import Header from './components/Header'
 import BioSection from './components/BioSection'
 import Skills from './components/Skills'
 import ProjectsSection from './components/ProjectsSection'
-import MobileProjectsSection from './components/MobileProjectsSection'
 import ContactSection from './components/ContactSection'
 import Certs from './components/Certs';
 import Footer from './components/Footer';

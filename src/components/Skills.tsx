@@ -10,7 +10,7 @@ import { SiCss3 } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
-import { SiNextdotjs } from 'react-icons/si'
+import { SiNextdotjs } from "react-icons/si";
 import Icon from "../assets/images/mongoose.js";
 
 const Skills: React.FC = () => {
@@ -20,23 +20,56 @@ const Skills: React.FC = () => {
       <div className={classes["skills-container"]}>
         <div className={classes["skills-overview"]}>
           <p>
-            I specialize in the React frontend framework, and the MERN
-            stack(MongoDB, Express, React, NodeJS). I have recently learned the
-            NextJS framework and have embraced it’s many awesome features such
-            as server side rendering, file based routing, image optimization,
-            and it’s built in API. I have since transitioned some of my React
-            projects to NextJS, to improve user experience as well as boost SEO.
-            I strive to make all my projects completely responsive so they look
-            great on any device. As well as coding I have some Adobe
-            Illustrator/Inkscape skills and can create custom logos and icons to
-            incorporate into my designs. I love learning new things and am on a
-            constant quest to broaden my skill set. My certifications can be
-            found{" "}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Driven by a passion
+            for both design and code, I take great enjoyment in crafting
+            beautiful and fully responsive websites and applications. Taking
+            inspiration from all over the web, I love crafting bold, clean,
+            engaging and immersive websites that look great on any device. For
+            many of my projects I have designed custom icons and logos utilizing
+            Inkscape as well as Adobe Illustrator.
+          </p>
+
+          <p>
+            I specialize in the React frontend framework, the MERN
+            stack(MongoDB, Express, React, NodeJS) and NextJS. NextJS, which
+            builds and expands upon the core features of React, has become my
+            framework of choice. It's core features like server side rendering,
+            file based routing, built in API and improved SEO, result in an
+            improved experience for both the client and the developer. I have
+            experience migrating several React projects to the NextJS framework.
+          </p>
+
+          <p>
+            Aside from my frontend skills I also have experience creating NodeJs
+            REST APIs with the Express framework. With my REST API acting as an
+            intermediary between the frontend and a MongoDB database, I have
+            implemented features for my websites such as user
+            signup/login/authentication, admin dashboards/privileges, photo/file
+            uploads, CRUD(Create, Remove, Update, Delete) operations and more. I
+            utilize NPM packages like JSON Web Tokens and BCrypt to ensure
+            security and follow best practices. I have also implemented these
+            features with NextJS&apos;s built in API which uses NodeJS under the
+            hood.
+          </p>
+
+          <p>
+            As a web developer I thouroughly enjoy solving problems, learning
+            perpetually and staying abreast of the lastest trends and
+            technologies in the industry. I would love the oppurtunity to
+            leverage my expertise and provide innovative solutions to your
+            unique business challenges!
+          </p>
+          <p>
+            My certifications can be found{" "}
             <Link className={classes.link} to="/certs">
               here
             </Link>{" "}
             and you can find my project repos on{" "}
-            <a className={classes.link} href="https://github.com/meltphace7">
+            <a
+              className={classes.link}
+              href="https://github.com/meltphace7"
+              target="_blank"
+            >
               Github
             </a>
           </p>

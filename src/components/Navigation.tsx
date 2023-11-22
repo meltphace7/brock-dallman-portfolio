@@ -18,7 +18,6 @@ const Navigation: React.FC = () => {
         return () => window.removeEventListener("scroll", handleScroll);
       }, []);
 
-  console.log(scrollDirection);
 
   const navClasses =
     scrollDirection === "up" && offsetY > 50
